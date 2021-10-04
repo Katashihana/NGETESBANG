@@ -142,8 +142,8 @@ Qrovo = settings.Qrovo
 Qrgopy = settings.Qrgopay
 Qrdana = settings.Qrdana
 Nogpy = 11111111111 
-Noovo = 081227654358 
-Nodana = 081398860278
+Noovo = 08111111111 
+Nodana = -89626029135
 multi = true
 nopref = false
 
@@ -467,7 +467,7 @@ const fvid = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6289626029135-1613049930@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -500,7 +500,7 @@ const finv = {
 const fstick = {
 "key": {
 	  "participant": `0@s.whatsapp.net`,
-      "remoteJid": "6289643739077-1613049930@g.us",
+      "remoteJid": "6289626029135-1613049930@g.us",
       "fromMe": false,
       "id": "3B64558B07848BD81108C1D14712018E"
     },
@@ -525,7 +525,7 @@ const fgi = {
 	 key: { 
          fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6289626029135-1613049930@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -543,7 +543,7 @@ const ftex = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6289626029135-1613049930@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -558,7 +558,7 @@ const fvoc = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "6289626029135-1613049930@g.us" } : {}) 
                 },
 	 message: { 
 		"audioMessage": {
@@ -978,7 +978,7 @@ break
 case 'bm':
  listMsg = {
  buttonText: 'KLIK DISINI',
- footerText: '*SUPPORT Hanbu FF*',
+ footerText: '*SUPPORT KATASHI HANA*',
  description: `*Hai ${pushname} 🌹*`,
  sections: [
                      {
@@ -1011,10 +1011,10 @@ case 'bm':
 denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
 break
 case 'wait':
-denz.sendMessage(from, `*HAI ${pushname} Daripada Nunggu Mending Subscribe Dulu*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "SUPPORT Hanbu FF",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://m.youtube.com/channel/UCqkpkST3ElnoHNAwEcuRX3g"}}})
+denz.sendMessage(from, `*HAI ${pushname} Daripada Nunggu Mending Subscribe Dulu*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "SUPPORT KATASHI HANA",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://youtube.com/channel/UCrEMv0c1cuploq5GruMuwvw"}}})
 break
 case 'success':
-denz.sendMessage(from, `*Success Jangn Lupa Subscribe*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "SUPPORT Hanbu FF",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://m.youtube.com/channel/UCqkpkST3ElnoHNAwEcuRX3g"}}})
+denz.sendMessage(from, `*Success Jangn Lupa Subscribe*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "SUPPORT KATASHI HANA",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://youtube.com/channel/UCrEMv0c1cuploq5GruMuwvw"}}})
 break
 case 'qr':
 denz.sendMessage(from, `TEST`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QR GOPAY",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://l.top4top.io/p_2067qc45j0.jpg"}}})
@@ -1108,7 +1108,7 @@ break
 case 'sewa1':
  listMsg = {
  buttonText: 'KLIK DISINI',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*LIST SEWA BOT*\n _Hay @${stod.split('@')[0]}_ Ini adalah list sewa bot silahkan pilih`,
  sections: [
                      {
@@ -1155,7 +1155,7 @@ case '🕔sewa':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `_*Hai ${pushname}🌹*_\n\nSilahkan pilih metode pembayaran`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}py`,buttonText:{displayText:'NOMOR 📱'},type:1},{buttonId:`${prefix}qrsewa`,buttonText:{displayText:'QR CODE 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `_*Hai ${pushname}🌹*_\n\nSilahkan pilih metode pembayaran`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}py`,buttonText:{displayText:'NOMOR 📱'},type:1},{buttonId:`${prefix}qrsewa`,buttonText:{displayText:'QR CODE 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'py':
         case '0':
@@ -1164,7 +1164,7 @@ case 'py':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `_*Hai ${pushname}🌹*_\n\nSilahkan pilih metode pembayaran`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}o1`,buttonText:{displayText:'OVO 📱'},type:1},{buttonId:`${prefix}d1`,buttonText:{displayText:'GOPAY 📱'},type:1},{buttonId:`${prefix}d1`,buttonText:{displayText:'DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `_*Hai ${pushname}🌹*_\n\nSilahkan pilih metode pembayaran`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}o1`,buttonText:{displayText:'OVO 📱'},type:1},{buttonId:`${prefix}d1`,buttonText:{displayText:'GOPAY 📱'},type:1},{buttonId:`${prefix}d1`,buttonText:{displayText:'DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'qrsewa':
         case '0':
@@ -1173,7 +1173,7 @@ case 'qrsewa':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `_Hai ${pushname}🌹_\n\nSilahkan pilih metode pembayaran`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrg1`,buttonText:{displayText:'QR GOPAY 📱'},type:1},{buttonId:`${prefix}qro1`,buttonText:{displayText:'QR OVO 📱'},type:1},{buttonId:`${prefix}qrd1`,buttonText:{displayText:'QR DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `_Hai ${pushname}🌹_\n\nSilahkan pilih metode pembayaran`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrg1`,buttonText:{displayText:'QR GOPAY 📱'},type:1},{buttonId:`${prefix}qro1`,buttonText:{displayText:'QR OVO 📱'},type:1},{buttonId:`${prefix}qrd1`,buttonText:{displayText:'QR DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'qro1':
 denz.sendMessage(from, `*[❗] OPEN SEWA BOT*
@@ -1265,7 +1265,7 @@ _CHAT : wa.me/${otod.split('@')[0]}_
 katalog(menu)
 listMsg = {
  buttonText: 'NOMOR',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai ${pushname} 🎟️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer ovo dan jangan lupa sertakan bukti pembayaran dan kirim ke OWNER`,
  sections: [
                      {
@@ -1305,7 +1305,7 @@ _CHAT : wa.me/${otod.split('@')[0]}_
 katalog(menu)
 listMsg = {
  buttonText: 'NOMOR',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai ${pushname} 🎟️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer dana dan jangan lupa sertakan bukti pembayaran dan kirim ke OWNER`,
  sections: [
                      {
@@ -1345,7 +1345,7 @@ _CHAT : wa.me/${otod.split('@')[0]}_
 katalog(menu)
 listMsg = {
  buttonText: 'NOMOR',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai ${pushname} 🎟️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer gopay dan jangan lupa sertakan bukti pembayaran dan kirim ke OWNER`,
  sections: [
                      {
@@ -1364,7 +1364,7 @@ break
 case '👍':
 listMsg = {
  buttonText: 'OWNER 👨‍💻',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai ${pushname}* \n\nsilahkan tekan "OWNER" untuk menuju ke nomer owner`,
  sections: [
                      {
@@ -1383,7 +1383,7 @@ break
 case 'gk':
 listMsg = {
  buttonText: 'MULAI',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `Emm y udah lah mending main game aja`,
  sections: [
                      {
@@ -1411,7 +1411,7 @@ case 'sewaff2':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `_Hai ${pushname}_\n\nSilahkan pilih metode pembayaran`, "_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa2`,buttonText:{displayText:'💞Ya'},type:1},{buttonId:`${prefix}gk`,buttonText:{displayText:'👀Tidak'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `_Hai ${pushname}_\n\nSilahkan pilih metode pembayaran`, "_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa2`,buttonText:{displayText:'💞Ya'},type:1},{buttonId:`${prefix}gk`,buttonText:{displayText:'👀Tidak'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 //oktaaa cantipppp
 //oktaaa cantipppp
@@ -1613,7 +1613,7 @@ case 'donasi':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hai ${pushname} 🌹_* \n\nyakin nih mau donasi ? 🤔 Boong auto banned >_<`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}donasi1`,buttonText:{displayText:'💞Ya'},type:1},{buttonId:`${prefix}gk`,buttonText:{displayText:'👀Tidak'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hai ${pushname} 🌹_* \n\nyakin nih mau donasi ? 🤔 Boong auto banned >_<`, "*_© KATASHI HANA*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}donasi1`,buttonText:{displayText:'💞Ya'},type:1},{buttonId:`${prefix}gk`,buttonText:{displayText:'👀Tidak'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 //oktaaa cantipppp
 case 'donasi1':
@@ -1623,7 +1623,7 @@ case 'donasi1':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrdonasi`,buttonText:{displayText:'QR CODE 📱'},type:1},{buttonId:`${prefix}donasi111`,buttonText:{displayText:'NOMOR 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrdonasi`,buttonText:{displayText:'QR CODE 📱'},type:1},{buttonId:`${prefix}donasi111`,buttonText:{displayText:'NOMOR 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'qrdonasi':
         case '0':
@@ -1632,7 +1632,7 @@ case 'qrdonasi':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrovodonasi`,buttonText:{displayText:'QR OVO 📱'},type:1},{buttonId:`${prefix}qrgopaydonasi`,buttonText:{displayText:'QR GOPAY 📱'},type:1},{buttonId:`${prefix}qrdanadonasi`,buttonText:{displayText:'QR DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrovodonasi`,buttonText:{displayText:'QR OVO 📱'},type:1},{buttonId:`${prefix}qrgopaydonasi`,buttonText:{displayText:'QR GOPAY 📱'},type:1},{buttonId:`${prefix}qrdanadonasi`,buttonText:{displayText:'QR DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'donasi111':
         case '0':
@@ -1641,7 +1641,7 @@ case 'donasi111':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}11`,buttonText:{displayText:'OVO 💸'},type:1},{buttonId:`${prefix}111`,buttonText:{displayText:'DANA 💸'},type:1},{buttonId:`${prefix}1111`,buttonText:{displayText:'GOPAY 💸'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_© KATASHI HANAF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}11`,buttonText:{displayText:'OVO 💸'},type:1},{buttonId:`${prefix}111`,buttonText:{displayText:'DANA 💸'},type:1},{buttonId:`${prefix}1111`,buttonText:{displayText:'GOPAY 💸'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 //oktaaa cantipppp
 //oktaaa cantipppp
@@ -1701,7 +1701,7 @@ Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai se
 katalog(menu)
 listMsg = {
  buttonText: 'NOMOR',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai ${pushname} ☺️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer ovo`,
  sections: [
                      {
@@ -1728,7 +1728,7 @@ Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai se
 katalog(menu)
 listMsg = {
  buttonText: 'NOMOR',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai ${pushname} ☺️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer dana`,
  sections: [
                      {
@@ -1755,7 +1755,7 @@ Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai se
 katalog(menu)
 listMsg = {
  buttonText: 'NOMOR',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai ${pushname} ☺️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer gopay`,
  sections: [
                      {
@@ -1930,61 +1930,61 @@ break
 /// Okta cantipp
 /// Okta cantipp
 case 'botmenu':
-sendButLocation(from, `${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}list1`,buttonText:{displayText:'MENU 1📋'},type:1},{buttonId:`${prefix}list2`,buttonText:{displayText:'MENU 2📋'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}list1`,buttonText:{displayText:'MENU 1📋'},type:1},{buttonId:`${prefix}list2`,buttonText:{displayText:'MENU 2📋'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 /// Okta cantipp
 /// Okta cantipp
 case 'list1':
  listMsg = {
  buttonText: 'KLIK DISINI',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `_*Hay kak @${stod.split('@')[0]}*_ 😄\n\n Silahkan pilih menu disini`,
  sections: [
                      {
                       "title": `${jmn} - ${week} ${weton} - ${calender}`,
  rows: [
                           {
-                              "title": "Script \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Script \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Speed \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Speed \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Status \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Status \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Creator \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Creator \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Jadibot \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Jadibot \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Runtime \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Runtime \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "OwnerMenu \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "OwnerMenu \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "MakerMenu \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "MakerMenu \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "GroupMenu \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "GroupMenu \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "OtherMenu \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "OtherMenu \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "DownloadMenu \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "DownloadMenu \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            }
                         ]
@@ -1996,54 +1996,54 @@ break
 case 'list2':
  listMsg = {
  buttonText: 'KLIK DISINI',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `_*Hay kak @${stod.split('@')[0]}*_ 😄\n\n Silahkan pilih menu disini`,
  sections: [
                      {
                       "title": `${jmn} - ${week} ${weton} - ${calender}`,
  rows: [
                           {
-                              "title": "Script \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Script \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Speed \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Speed \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Status \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Status \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Creator \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Creator \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Jadibot \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Jadibot \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "Runtime \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "Runtime \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "OwnerMenu2 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "OwnerMenu2 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "MakerMenu2 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "MakerMenu2 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "GroupMenu2 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "GroupMenu2 \n\n _SUBSCRIBE KATASHI HANA",
                               "rowId": ""
                            },
                            {
-                              "title": "OtherMenu2 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "OtherMenu2 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "DownloadMenu2 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "DownloadMenu2 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            }
                         ]
@@ -2058,67 +2058,67 @@ menu = `*Hai ${pushname}*
 Mau Join Grub ${NamaBot} 😄
 
 *GRUB ${NamaBot} :*
-https://chat.whatsapp.com/Kw69Oel34Nd0JuluvFNVKt
+https://chat.whatsapp.com/H5JPkwbob5YH8x5Mpcxybm
 
 *GRUB ${NamaBot}2 :*
-https://chat.whatsapp.com/IlpQRKWDZed0GgVHmYJUbl
+https://chat.whatsapp.com/H5JPkwbob5YH8x5Mpcxybm
 
 *GRUB ${NamaBot}3 :*
-https://chat.whatsapp.com/IlpQRKWDZed0GgVHmYJUbl
+https://chat.whatsapp.com/H5JPkwbob5YH8x5Mpcxybm
 `
 katalog(menu)
 break
 case 'listdm1':
  listMsg = {
  buttonText: 'KLIK DISINI',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai kak @${stod.split('@')[0]}🌹*\n\n\List diamond by ${NamaBot} disini kak silahkan di pilih`,
  sections: [
                      {
                       "title": `${jmn} - ${week} ${weton} - ${calender}`,
  rows: [
                           {
-                              "title": "70💎 = IDR 10.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "70💎 = IDR 10.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "100💎 = IDR 15.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "100💎 = IDR 15.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "140💎 = IDR 20.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "140💎 = IDR 20.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "210💎 = IDR 30.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "210💎 = IDR 30.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "355💎 = IDR 50.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "355💎 = IDR 50.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "500💎 = IDR 70.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "500💎 = IDR 70.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "720💎 IDR 100.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "720💎 IDR 100.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "1000💎 IDR 140.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "1000💎 IDR 140.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "1215💎 IDR 167.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "1215💎 IDR 167.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "2005💎 IDR 270.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "2005💎 IDR 270.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "4005💎 IDR 535.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "4005💎 IDR 535.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            }
                         ]
@@ -2130,18 +2130,18 @@ break
 case 'member1':
  listMsg = {
  buttonText: 'KLIK DISINI',
- footerText: '*_© Hanbu FF_*',
+ footerText: '*_© KATASHI HANA_*',
  description: `*Hai kak @${stod.split('@')[0]}🌹*\n\n\List diamond by ${NamaBot} disini kak silahkan di pilih`,
  sections: [
                      {
                       "title": `${jmn} - ${week} ${weton} - ${calender}`,
  rows: [
                           {
-                              "title": "💳mingguan = IDR 30.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "💳mingguan = IDR 30.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            },
                            {
-                              "title": "💳bulanan = IDR 117.000 \n\n _SUBSCRIBE Hanbu FF_",
+                              "title": "💳bulanan = IDR 117.000 \n\n _SUBSCRIBE KATASHI HANA_",
                               "rowId": ""
                            }
                         ]
@@ -2158,7 +2158,7 @@ case '70💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 70 diamond dengan harga IDR 10.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay1`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 70 diamond dengan harga IDR 10.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay1`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '100💎':
         case '0':
@@ -2167,7 +2167,7 @@ case '100💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 100 diamond dengan harga IDR 15.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay2`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 100 diamond dengan harga IDR 15.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay2`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '140💎':
         case '0':
@@ -2176,7 +2176,7 @@ case '140💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 140 diamond dengan harga IDR 20.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay3`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 140 diamond dengan harga IDR 20.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay3`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '210💎':
         case '0':
@@ -2185,7 +2185,7 @@ case '210💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 210 diamond dengan harga IDR 30.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay4`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 210 diamond dengan harga IDR 30.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay4`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '355💎':
         case '0':
@@ -2194,7 +2194,7 @@ case '355💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 355 diamond dengan harga IDR 50.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay5`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 355 diamond dengan harga IDR 50.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay5`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '500💎':
         case '0':
@@ -2203,7 +2203,7 @@ case '500💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 500 diamond dengan harga IDR 70.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay6`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 500 diamond dengan harga IDR 70.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay6`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '720💎':
         case '0':
@@ -2212,7 +2212,7 @@ case '720💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 720 diamond dengan harga IDR 100.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay7`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 720 diamond dengan harga IDR 100.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay7`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '1000💎':
         case '0':
@@ -2221,7 +2221,7 @@ case '1000💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 1000 diamond dengan harga IDR 140.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay8`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 1000 diamond dengan harga IDR 140.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay8`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '1215💎':
         case '0':
@@ -2230,7 +2230,7 @@ case '1215💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 1215 diamond dengan harga IDR 167.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay9`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 1215 diamond dengan harga IDR 167.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay9`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '2005💎':
         case '0':
@@ -2239,7 +2239,7 @@ case '2005💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 2005 diamond dengan harga IDR 270.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay10`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 2005 diamond dengan harga IDR 270.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay10`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '4005💎':
         case '0':
@@ -2248,7 +2248,7 @@ case '4005💎':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 4005 diamond dengan harga IDR 535.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay11`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 4005 diamond dengan harga IDR 535.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay11`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '💳mingguan':
         case '0':
@@ -2257,7 +2257,7 @@ case '💳mingguan':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli M.MINGGUAN dengan harga IDR 30.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay12`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli M.MINGGUAN dengan harga IDR 30.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay12`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case '💳bulanan':
         case '0':
@@ -2266,7 +2266,7 @@ case '💳bulanan':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli M.BULANAN dengan harga IDR 117.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay13`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli M.BULANAN dengan harga IDR 117.000\n•Pilih back jika ingin kemabli ke list menu`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay13`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 //ini pembayaran ny//
 break
@@ -2277,7 +2277,7 @@ case 'pay1':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay1`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana1`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo1`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay1`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana1`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo1`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay2':
         case '0':
@@ -2286,7 +2286,7 @@ case 'pay2':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay2`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana2`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo2`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay2`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana2`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo2`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay3':
         case '0':
@@ -2295,7 +2295,7 @@ case 'pay3':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay3`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana3`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo3`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay3`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana3`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo3`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay4':
         case '0':
@@ -2304,7 +2304,7 @@ case 'pay4':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay4`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana4`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo4`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay4`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana4`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo4`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay5':
         case '0':
@@ -2313,7 +2313,7 @@ case 'pay5':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay5`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana5`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo5`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay5`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana5`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo5`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay6':
         case '0':
@@ -2322,7 +2322,7 @@ case 'pay6':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay6`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana6`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo6`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay6`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana6`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo6`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay7':
         case '0':
@@ -2331,7 +2331,7 @@ case 'pay7':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay7`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana7`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo7`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay7`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana7`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo7`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay8':
         case '0':
@@ -2340,7 +2340,7 @@ case 'pay8':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay8`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana8`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo8`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay8`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana8`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo8`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay9':
         case '0':
@@ -2349,7 +2349,7 @@ case 'pay9':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay9`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana9`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo9`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay9`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana9`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo9`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay10':
         case '0':
@@ -2358,7 +2358,7 @@ case 'pay10':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay10`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana10`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo10`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay10`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana10`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo10`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay11':
         case '0':
@@ -2367,7 +2367,7 @@ case 'pay11':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay11`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana11`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo11`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay11`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana11`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo11`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay12':
         case '0':
@@ -2376,7 +2376,7 @@ case 'pay12':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay12`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana12`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo12`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay12`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana12`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo12`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'pay13':
         case '0':
@@ -2385,7 +2385,7 @@ case 'pay13':
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay13`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana13`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo13`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay13`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana13`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo13`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 //ini nomer nya //
 case 'gopay1':
@@ -3818,20 +3818,20 @@ case 'downloadmenu':
 denz.sendMessage(from, `*HAI ${pushname}🌹*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 DOWNLOAD MENU📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://bit.ly/DownloadMenu1"}}})
 break
 case 'listdm':
-denz.sendMessage(from, `*${pushname}🌹*\n\nSebelum Top Up Kirim Id Dulu Dengan Cara Ketik *${prefix}id*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "HAI🌹",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw"}}})
+denz.sendMessage(from, `*${pushname}🌹*\n\nSebelum Top Up Kirim Id Dulu Dengan Cara Ketik *${prefix}id*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "HAI🌹",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://youtube.com/channel/UCrEMv0c1cuploq5GruMuwvw"}}})
 break
 case 'member':
-denz.sendMessage(from, `*${pushname}🌹*\n\nSebelum Top Up Kirim Id Dulu Dengan Cara Ketik *${prefix}uid*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "HAI🌹",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw"}}})
+denz.sendMessage(from, `*${pushname}🌹*\n\nSebelum Top Up Kirim Id Dulu Dengan Cara Ketik *${prefix}uid*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "HAI🌹",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://youtube.com/channel/UCrEMv0c1cuploq5GruMuwvw"}}})
 break
 case 'id':
 					if (!c) return reply(`ID Nya Mana Kak?\nContoh :\n${prefix}id 123456789`)
-					atetepe = await getBuffer(`https://wa.me/6282138919347?text=Assalamualaikum${encodeURIComponent(c)}`)
-					sendButLocation(from, `Nama : _${pushname}_\nNomor : _${stod.split('@')[0]}_\nID : _${encodeURIComponent(c)}_`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}listdm1`,buttonText:{displayText:'NEXT ➡️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+					atetepe = await getBuffer(`https://wa.me/6289626029135?text=Assalamualaikum${encodeURIComponent(c)}`)
+					sendButLocation(from, `Nama : _${pushname}_\nNomor : _${stod.split('@')[0]}_\nID : _${encodeURIComponent(c)}_`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}listdm1`,buttonText:{displayText:'NEXT ➡️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 					break
 case 'uid':
 					if (!c) return reply(`ID Nya Mana Kak?\nContoh :\n${prefix}uid 123456789`)
-					atetepe = await getBuffer(`https://wa.me/6282138919347?text=Assalamualaikum${encodeURIComponent(c)}`)
-					sendButLocation(from, `Nama : _${pushname}_\nNomor : _${stod.split('@')[0]}_\nID : _${encodeURIComponent(c)}_`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}member1`,buttonText:{displayText:'NEXT ➡️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+					atetepe = await getBuffer(`https://wa.me/6289626029135?text=Assalamualaikum${encodeURIComponent(c)}`)
+					sendButLocation(from, `Nama : _${pushname}_\nNomor : _${stod.split('@')[0]}_\nID : _${encodeURIComponent(c)}_`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}member1`,buttonText:{displayText:'NEXT ➡️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 					break
 case 'qrcodeovo':
 denz.sendMessage(from,`*HAI ${pushname}🌹*\n\n• Scan Qrcode Diatas\n• Isi Nominal Sesuai Pilihan\n• Transfer Sesuai Nominal`, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 QRCODE OVO 📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://f.top4top.io/p_2100f7vs70.jpg"}}})
@@ -3846,7 +3846,7 @@ break
 case 'jadibot':
 menu = `Enak aja lu mau numpang sewa lah :v`
 katalog(menu)
-sendButLocation(from, `Hai ${pushname} ☺️`, "*_© Hanbu FF_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa`,buttonText:{displayText:'SEWA 🎟️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `Hai ${pushname} ☺️`, "*_© KATASHI HANA_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa`,buttonText:{displayText:'SEWA 🎟️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 break
 case 'stopjadibot':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -3870,7 +3870,7 @@ for (let i of ownerNumber) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Hanbu FF;;;\nFN:${vname ? `Hanbu FF` : `${denz.user.name}`}\nitem1.TEL;waid=6282138919347:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Hanbu FF;;;\nFN:${vname ? `KATASHI HANA` : `${denz.user.name}`}\nitem1.TEL;waid=6282138919347:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -5979,6 +5979,453 @@ break
                 deleteCommands(body.slice(11), commandsDB)
 				reply(`Sukses menghapus respon ${body.slice(11)}`)
 				break
+case 'google':
+  case 'googles':
+  case 'gs':
+  case 'googlesearch':
+  reply(mess.wait)
+  anu = await fetchJson(`http://api.lolhuman.xyz/api/gsearch?apikey=7ef1e86bd8624c0edd8bd386&query=${q}`, {method: 'get'})
+  teks = `─ 「 *GOOGLE SEARCH* 」 ─\n\n*Hasil Pencarian Dari ${q}*\n\n`
+  o = 1
+  for (let plor of anu.result) {
+   teks += `*${o++}. ${plor.title}*\n*Desc :* ${plor.desc}\n*Link :* ${plor.link}\n━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━\n`
+  }
+  reply(teks.trim())
+  break
+  case 'distance': 
+case 'jarak':
+    if (args.length < 1) return reply(`Penggunaan ${command} tempat1|tempat2`)
+    if (!q.includes("|")) return reply(`Penggunaan ${command} tempat1|tempat2`)
+    fetchJson(`https://api.lolhuman.xyz/api/jaraktempuh?apikey=7ef1e86bd8624c0edd8bd386&kota1=${q.split('|')[0].trim()}&kota2=${q.split('|')[1].trim()}`)
+    .then((res) =>{
+  let x = res.result
+  let ini_txt = `Informasi Jarak dari ${q.split('|')[0].trim()} ke ${q.split('|')[1].trim()} :\n\n`
+  ini_txt += `\`\`\`◪ Asal :\`\`\` ${x.from.name}\n`
+  ini_txt += `\`\`\`◪ Garis Lintang :\`\`\` ${x.from.latitude}\n`
+  ini_txt += `\`\`\`◪ Garis Bujur :\`\`\` ${x.from.longitude}\n\n`
+  ini_txt += `\`\`\`◪ Tujuan :\`\`\` ${x.to.name}\n`
+  ini_txt += `\`\`\`◪ Garis Lintang :\`\`\` ${x.to.latitude}\n`
+  ini_txt += `\`\`\`◪ Garis Bujur :\`\`\` ${x.to.longitude}\n\n`
+  ini_txt += `\`\`\`◪ Jarak Tempuh :\`\`\` ${x.jarak}\n`
+  ini_txt += `\`\`\`◪ Waktu Tempuh :\`\`\`\n`
+  ini_txt += `  ╭───────────────❏\n`
+  ini_txt += `❍┤ Kereta Api : ${x.kereta_api}\n`
+  ini_txt += `❍┤ Pesawat : ${x.pesawat}\n`
+  ini_txt += `❍┤ Moil : ${x.moil}\n`
+  ini_txt += `❍┤ Motor : ${x.motor}\n`
+  ini_txt += `❍┤ Jalan Kaki : ${x.jalan_kaki}\n`
+  ini_txt += `  ╰───────────────❏\n`
+  reply(ini_txt)
+    })
+   .catch((err) => {
+   reply(`Error, Mungkin Nama Kota Tidak Di Temukan`)
+    })
+    break
+case 'meme': 
+case 'memeindo':
+  reply(mess.wait)
+  sendFileFromUrl(`https://lolhuman.herokuapp.com/api/meme/memeindo?apikey=7ef1e86bd8624c0edd8bd386`, image, {quoted:mek})      
+  break
+case 'cekapikey':
+if (!isOwner && !mek.key.fromMe) return
+anu = await fetchJson(`https://lolhuman.herokuapp.com/api/checkapikey?apikey=7ef1e86bd8624c0edd8bd386`)
+teks = `─「 *APIKEY CEK* 」─\n\n➸ *USSERNAME :* ${anu.result.username}\n➸ *REQUEST :* ${anu.result.requests}\n➸ *TODAY :* ${anu.result.today}\n➸ *AKUN TYPE :* ${anu.result.account_type}\n➸ *EXPIRED :* ${anu.result.expired}`
+denz.sendMessage(`${ownerNumber}`, teks, text, {quoted: mek})
+break
+case 'igtv': 
+case 'tvig': 
+case 'instagramtv':
+if (!isUrl) return reply('Linknya?')
+reply(mess.wait)
+anu = await fetchJson(`http://lolhuman.herokuapp.com/api/instagram?apikey=7ef1e86bd8624c0edd8bd386
+&url=${q}`, {method: 'get'})
+if (anu.error) return reply(anu.error)
+buffer = await getBuffer(anu.result)
+denz.sendMessage(from,buffer,video,{mimetype: 'video/mp4', quoted: mek})
+break
+case 'meadmin':
+if (!isGroup) return reply(mess.only.group)
+if (!isOwner) return
+if (isGroupAdmins) return reply('Lu Dah Admin Om')
+if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+denz.groupMakeAdmin(from, [sender])
+reply('Sukses')
+break
+case 'bugreport':
+if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
+teks = args.join(' ')
+reply('Terima Kasih Telah Melaporkan Bug Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
+denz.sendMessage('6289626029135@s.whatsapp.net',`*INFO DARI PENGGUNA*\n*Bug Report:* ${teks}`, text)
+break
+case 'request':
+if (args.length < 1) return reply(`Ketik ${prefix}request [fiturnya] [Error Nya Gimana]`) 
+teks = args.join(' ')
+reply('Terima Kasih Telah Request Fitur Baru Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
+denz.sendMessage('6289626029135@s.whatsapp.net',`*INFO DARI PENGGUNA*\n*Request Fitur:* ${teks}`, text)
+break
+case 'blocklist':
+teks = 'This is list of blocked number :\n'
+for (let block of blocked) {
+teks += `~> @${block.split('@')[0]}\n`
+}
+teks += `Total : ${blocked.length}`
+denz.sendMessage(from, teks.trim(), extendedText, {quoted: msg, contextInfo: {"mentionedJid": blocked}})
+break 
+case 'jadian':
+              jds = []
+              jdii = groupMembers
+              koss = groupMembers
+              akuu = jdii[Math.floor(Math.random() * jdii.length)]
+              diaa = koss[Math.floor(Math.random() * koss.length)]
+              teks = `Ciee.. yang lagi jadian @${akuu.jid.split('@')[0]}  ( ) @${diaa.jid.split('@')[0]} `
+              jds.push(akuu.jid)
+              jds.push(diaa.jid)
+              mentions(teks, jds, true)
+              break
+       case 'cantik':
+              membr = []
+              const mes = groupMembers
+              const msk = groupMembers
+              const siaps = mes[Math.floor(Math.random() * mes.length)]
+              const sips = pushname[Math.floor(Math.random() * msk.length)]
+              teks = `*Yang Paling Cantik Disini Adalah :* @${siaps.jid.split('@')[0]}`
+              membr.push(siaps.jid)
+              mentions(teks, membr, true)
+              break
+       case 'ganteng':
+              membr = []
+              const nus = groupMembers
+              const msl = groupMembers
+              const siapss = nus[Math.floor(Math.random() * nus.length)]
+              const sipss = pushname[Math.floor(Math.random() * msl.length)]
+              teks = `*Masih Gantengan Owner Gua :* @${siapss.jid.split('@')[0]}`
+              membr.push(siapss.jid)
+              mentions(teks, membr, true)
+              break
+       case 'babi':
+              membr = []
+              const meg = groupMembers
+              const mge = groupMembers
+              const ba = meg[Math.floor(Math.random() * meg.length)]
+              const bi = pushname[Math.floor(Math.random() * mge.length)]
+              teks = `*Yang Paling Babi Disini Adalah :* @${ba.jid.split('@')[0]}`
+              membr.push(ba.jid)
+              mentions(teks, membr, true)
+              break
+       case 'beban':
+              membr = []
+              const nge = groupMembers
+              const tod = groupMembers
+              const beb = nge[Math.floor(Math.random() * nge.length)]
+              const an = pushname[Math.floor(Math.random() * tod.length)]
+              teks = `*Yang Paling Beban Disini Adalah :* @${beb.jid.split('@')[0]}`
+              membr.push(beb.jid)
+              mentions(teks, membr, true)
+              break
+       case 'cekwatak':
+              var namao = pushname
+              var prfx = await denz.getProfilePicture(sender)
+              const watak = ['top deh pokoknya','penyayang','pemurah','Pemarah','Pemaaf','Penurut','Baik','baperan','Baik-Hati','penyabar','UwU','Suka Membantu']
+              const wtk = watak[Math.floor(Math.random() * (watak.length))]
+              const ratenyaasu = ['100%','95%','90%','85%','80%','75%','70%','65%','60%','55%','50%','45%','40%','35%','30%','25%','20%','15%','10%','5%']
+              const akhlak = ratenyaasu[Math.floor(Math.random() * (ratenyaasu.length))]
+              const sifat = ['Penolong','Suka Membantu','Saling Menolong','Perhatian','Ngak Cuek','Romantis','Dermawan','Cool','Peduli Kepada Sesama','Suka Berkata Kasar']
+              const sft = sifat[Math.floor(Math.random() * (sifat.length))]
+              const hobby = ['Memasak','Membantu Atok','Mabar','Nobar','Coli','Colkyy','Sosmedtan','Membantu Orang lain','Nonton Anime','Nonton Drakor','Naik Motor','Nyanyi','Menari','Bertumbuk','Menggambar','Foto fotoan Ga jelas','Maen Game','Berbicara Sendiri']
+              const hby = hobby[Math.floor(Math.random() * (hobby.length))]
+              const kelebihan = ['Soleh dan Soleha','Pintar','Rajin','Teladan']
+              const klbh = kelebihan[Math.floor(Math.random() * (kelebihan.length))]
+              const tipe = ['cool','idaman','Alami','Keren','Ideal','Dia Bamget','normal','elite','epic','Legend']
+              const typo = tipe[Math.floor(Math.random() * (tipe.length))]
+              await reply(`[ INTROGASI SUKSES ]\n\n[Nama]:${namao}\n\n[Watak]:${wtk}\n\n[Akhlak]:${akhlak}\n\n[Sifat]:${sft}\n\n[Hobby]:${hby}\n\n[Tipe]:${typo}\n\n[Kelebihan]:${klbh}\n\nNote\n\n_ini hanya main main_`)
+              break
+                     case 'cekmati':
+              if (!q) return reply('nama?')
+              predea = await axios.get(`https://api.agify.io/?name=${q}`)
+              reply(`Nama : ${predea.data.name}\n*Mati Pada Umur :* ${predea.data.age} Tahun.\n\n_Cepet Cepet Tobat Bro Soalnya Mati ga ada yang tau_`)
+              break
+case 'loliv':
+       case 'lolivid':
+       case 'lolivideo':
+              reply(mess.wait)
+              anu = await fetchText('https://raw.githubusercontent.com/AlvioAdjiJanuar/random/main/loli.txt')
+             .then(async (body) => {
+              anu = body.split('\n')
+              anu = anu[Math.floor(Math.random() * anu.length)]
+              sendMediaURL(from, anu)
+})
+             .catch(async (err) => {
+              console.error(err)
+              reply(`${err}`)
+})
+              break
+       case 'nekopoi3d':
+       case '3dnekopoi':
+       case '3dnekopoilast':
+              reply(mess.wait)
+              try {
+              bsangee = await axios.get(`https://api.vhtear.com/neko3d&apikey=ZetsuBot`)
+              bsangee2 = bsangee.data
+              keluarplay = `*List update 3D JAV*\n`
+              for (let i = 0; i < bsangee2.result.length; i++) {
+              keluarplay += `\n\n\n*Judul* : ${bsangee2.result[i].title}\n*Deskripsi* : ${bsangee2.result[i].description}\n*Link* : ${bsangee2.result[i].url}\n`
+}
+              reply(keluarplay) 
+              } catch (err) {
+              console.log(err)
+              reply('error!')
+}
+               break
+        case 'nekopoicosplay':
+        case 'cosplaynekopoi':
+               try {
+               reply(mess.wait)
+               bsangbe = await axios.get(`https://api.vhtear.com/nekojavcosplay&apikey=ZetsuBot`)
+               bsangbe2 = bsangbe.data
+               keluarplay = `*List update Cosplay JAV*\n`
+               for (let i = 0; i < bsangbe2.result.length; i++) {
+               keluarplay += `\n\n\n*Judul* : ${bsangbe2.result[i].title}\n*Deskripsi* : ${bsangbe2.result[i].detail}\n*Link* : ${bsangbe2.result[i].url}\n`
+}
+               reply(keluarplay)
+               } catch (err) {
+               console.log(err)
+}
+               break
+               case '+62':
+reply(mess.wait)
+sendMediaURL(from,`https://itsmevall.herokuapp.com/api/asupan?apikey=${valkey}`, `Ni Kak`)
+ break
+ case 'reminder': // by Slavyan
+        if (!q)
+          return reply(
+            `CONTOH PENGGUNANNYA:\n${prefix}reminder text/2s\n\nNOTE: \n*s* - seconds\n*m* - minutes\n*h* - hours\n*d* - days`
+          );
+        teks = body.slice(10);
+        const messRemind = teks.split("/")[0];
+        const timeRemind = teks.split("/")[1];
+        typeRemind = "Text";
+        if (isQuotedImage) typeRemind = "Image";
+        if (isQuotedSticker) typeRemind = "Sticker";
+        if (isQuotedAudio) typeRemind = "Audio";
+        if (!isQuotedImage && !isQuotedAudio && !isQuotedSticker)
+          typeRemind = "Text";
+        const parsedTime = ms(toMs(timeRemind));
+        reminder.addReminder(
+          sender,
+          messRemind,
+          typeRemind,
+          timeRemind,
+          _reminder
+        );
+        if (!isQuotedImage && !isQuotedSticker && !isQuotedAudio) {
+          await denz.sendMessage(
+            from,
+            `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+    
+Reminder berhasil diaktifkan!
+âž¸ Pesan: ${messRemind}
+âž¸ Type: Text
+âž¸ Durasi: ${parsedTime.hours} jam ${parsedTime.minutes} menit ${
+              parsedTime.seconds
+            } detik
+âž¸ Untuk: @${sender.split("@")[0]}
+    `,
+            text,
+            { contextInfo: { mentionedJid: [sender] } }
+          );
+          const intervRemind = setInterval(async () => {
+            if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
+              anu = await reminder.getReminderMsg(sender, _reminder);
+              denz.sendMessage(
+                from,
+                `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+
+â° @${sender.split("@")[0]} â°
+âž¸ Pesan: ${messRemind}
+âž¸ Type: ${reminder.getReminderType(sender, _reminder)}`,
+                text,
+                { contextInfo: { mentionedJid: [sender] } }
+              );
+              _reminder.splice(
+                reminder.getReminderPosition(sender, _reminder),
+                1
+              );
+              fs.writeFileSync(
+                "./database/reminder.json",
+                JSON.stringify(_reminder)
+              );
+              clearInterval(intervRemind);
+            }
+          }, 1000);
+        } else if (isQuotedSticker) {
+          encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
+            .message.extendedTextMessage.contextInfo;
+          media = await denz.downloadAndSaveMediaMessage(encmedia);
+          await itsmevall.sendMessage(
+            from,
+            `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+    
+Reminder berhasil diaktifkan!
+âž¸ Pesan: ${messRemind}
+âž¸ Type: Sticker
+âž¸ Durasi: ${parsedTime.hours} jam ${parsedTime.minutes} menit ${
+              parsedTime.seconds
+            } detik
+âž¸ Untuk: @${sender.split("@")[0]}
+    `,
+            text,
+            { contextInfo: { mentionedJid: [sender] } }
+          );
+          const intervRemind = setInterval(async () => {
+            if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
+              anu = await reminder.getReminderMsg(sender, _reminder);
+              denz.sendMessage(
+                from,
+                `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+
+â° @${sender.split("@")[0]} â°
+âž¸ Pesan: ${messRemind}
+âž¸ Type: ${reminder.getReminderType(sender, _reminder)}`,
+                text,
+                { contextInfo: { mentionedJid: [sender] } }
+              );
+              denz.sendMessage(from, fs.readFileSync(media), sticker);
+              _reminder.splice(
+                reminder.getReminderPosition(sender, _reminder),
+                1
+              );
+              fs.writeFileSync(
+                "./database/reminder.json",
+                JSON.stringify(_reminder)
+              );
+              clearInterval(intervRemind);
+            }
+          }, 1000);
+        } else if (isQuotedImage) {
+          encmedia = isQuotedImage
+            ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
+                .extendedTextMessage.contextInfo
+            : mek;
+          media = await denz.downloadAndSaveMediaMessage(encmedia);
+          await denz.sendMessage(
+            from,
+            `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+    
+Reminder berhasil diaktifkan!
+âž¸ Pesan: ${messRemind}
+âž¸ Type: Image
+âž¸ Durasi: ${parsedTime.hours} jam ${parsedTime.minutes} menit ${
+              parsedTime.seconds
+            } detik
+âž¸ Untuk: @${sender.split("@")[0]}
+    `,
+            text,
+            { contextInfo: { mentionedJid: [sender] } }
+          );
+          const intervRemind = setInterval(async () => {
+            if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
+              anu = await reminder.getReminderMsg(sender, _reminder);
+              teks = `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+
+â° @${sender.split("@")[0]} â°
+âž¸ Pesan: ${messRemind}
+âž¸ Type: ${reminder.getReminderType(sender, _reminder)}`;
+              denz.sendMessage(from, media, image, {
+                contextInfo: { mentionedJid: [sender] },
+                caption: teks,
+              });
+              _reminder.splice(
+                reminder.getReminderPosition(sender, _reminder),
+                1
+              );
+              fs.writeFileSync(
+                "./database/reminder.json",
+                JSON.stringify(_reminder)
+              );
+              clearInterval(intervRemind);
+            }
+          }, 1000);
+        } else if (isQuotedAudio) {
+          encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
+            .message.extendedTextMessage.contextInfo;
+          media = await denz.downloadAndSaveMediaMessage(encmedia);
+          await denz.sendMessage(
+            from,
+            `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+    
+Reminder berhasil diaktifkan!
+âž¸ Pesan: ${messRemind}
+âž¸ Type: Audio
+âž¸ Durasi: ${parsedTime.hours} jam ${parsedTime.minutes} menit ${
+              parsedTime.seconds
+            } detik
+âž¸ Untuk: @${sender.split("@")[0]}
+    `,
+            text,
+            { contextInfo: { mentionedJid: [sender] } }
+          );
+          const intervRemind = setInterval(async () => {
+            if (Date.now() >= reminder.getReminderTime(sender, _reminder)) {
+              anu = await reminder.getReminderMsg(sender, _reminder);
+              denz.sendMessage(
+                from,
+                `â”€â”€ ã€Œ REMINDER ã€ â”€â”€
+
+â° @${sender.split("@")[0]} â°
+âž¸ Pesan: ${messRemind}
+âž¸ Type: ${reminder.getReminderType(sender, _reminder)}`,
+                text,
+                { contextInfo: { mentionedJid: [sender] } }
+              );
+              denz.sendMessage(from, fs.readFileSync(media), audio, {
+                contextInfo: { mentionedJid: [sender] },
+                mimetype: "audio/mp4",
+                ptt: true,
+                caption: teks,
+              });
+              _reminder.splice(
+                reminder.getReminderPosition(sender, _reminder),
+                1
+              );
+              fs.writeFileSync(
+                "./database/reminder.json",
+                JSON.stringify(_reminder)
+              );
+              clearInterval(intervRemind);
+            }
+          }, 1000);
+        }
+        break;
+        case 'groupinfo':
+        if (!isGroup) return;
+        ppUrl = await denz.getProfilePicture(from); // leave empty to get your own
+        buffergbl = await getBuffer(ppUrl);
+        denz.sendMessage(from, buffergbl, image, {
+          quoted: mek,
+          caption: `\`\`\`ã€Œ Group Info ã€\`\`\`\n*â€¢> Name* : ${groupName}\n*â€¢> Member* : ${groupMembers.length}\n*â€¢> Admin* : ${groupAdmins.length}\n*â€¢> Description* : \n${groupDesc}`,
+        });
+        break;
+        case 'listonline': //copas dari stikerinbot
+        let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat;
+        try {
+          let online = [
+            ...Object.keys(denz.chats.get(id).presences),
+            denz.user.jid,
+          ];
+          denz.reply(
+            m.chat,
+            "â”Œâ”€ã€” Daftar Online ã€•\n" +
+              online.map((v) => "â”œ @" + v.replace(/@.+/, "")).join`\n` +
+              "\nâ””â”€â”€â”€â”€",
+            m,
+            {
+              contextInfo: { mentionedJid: online },
+            }
+          );
+         } catch (e) {
+          m.reply("");
+        }
+        break;
 		default:break
 		}
 		if (isTTT && isPlayer2){
